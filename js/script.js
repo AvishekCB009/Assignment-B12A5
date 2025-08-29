@@ -272,25 +272,57 @@ document.getElementById('call_btn_9')
         logHistory()
     })
 
-    // call history history function
-    const callData = []
-
-    function logHistory(){
-        const container = document.getElementById('history_container')
-        container.innerHTML=''
-        for(const data of callData){
-            const template = document.createElement('div')
-            template.innerHTML=`
-            <div class="flex justify-between bg-slate-200 p-5 rounded-lg mt-2">
-                            <div>
-                                <p class="text-base font-bold">${data.name}</p>
-                                <p class="">${data.number}</p>
-                            </div>
-                            <div>
-                                <p class="">${data.date}</p>
-                            </div>
+// call history history function
+let callData = []
+function logHistory(){
+    const container = document.getElementById('history_container')
+    container.innerHTML=''
+    for(const data of callData){
+        const template = document.createElement('div')
+        template.innerHTML=`
+        <div class="flex justify-between bg-slate-200 p-5 rounded-lg mt-2">
+                        <div>
+                            <p class="text-base font-bold">${data.name}</p>
+                            <p class="">${data.number}</p>
                         </div>
-            `
-            container.appendChild(template)
-        }
+                        <div>
+                            <p class="">${data.date}</p>
+                        </div>
+                    </div>
+        `
+        container.appendChild(template)
     }
+}
+// clear button
+document.getElementById('btn_clear')
+    .addEventListener("click",function(){
+        callData = []
+        document.getElementById('history_container').innerHTML=
+        `
+        <div class="flex justify-between bg-slate-200 p-5 rounded-lg mt-2">
+            <div class="">
+                <p class="text-center">No Call History Available</p>
+            </div>
+        </div>
+        `
+        alert('history has been cleared!!')
+    })
+// history visibility
+
+document.getElementById('btn_show')
+    .addEventListener('click',function(){
+        document.getElementById('btn_show').classList.add('hidden')
+        document.getElementById('btn_hide').classList.add('block')
+        document.getElementById('btn_hide').classList.remove('hidden')
+        document.getElementById('call_log').classList.remove('hidden')
+        document.getElementById('call_log').classList.add('block')
+    })
+document.getElementById('btn_hide')
+    .addEventListener('click',function(){
+        document.getElementById('btn_show').classList.remove('hidden')
+        document.getElementById('btn_hide').classList.remove('block')
+        document.getElementById('btn_hide').classList.add('hidden')
+        document.getElementById('call_log').classList.add('hidden')
+        document.getElementById('call_log').classList.remove('block')
+    })
+    
