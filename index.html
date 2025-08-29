@@ -24,7 +24,7 @@
         <div class=" flex justify-center gap-4 items-center px-[10px] mt-5 sm:flex-none lg:mt-0">
             <div class="">
                 <div class="bg-[#41FF6B30] flex items-center gap-2 py-2 px-6 rounded-3xl ">
-                    <p class="font-black text-base">0</p>
+                    <p id="heart_count" class="font-black text-base">0</p>
                     <img src="assets/heart.png" alt="" class="w-7">
                 </div>
             </div>
@@ -56,7 +56,7 @@
              <div class="lg:flex lg:flex-row-reverse lg:justify-center lg:gap-6">
                 <!-- call history -->
                 <div class="bg-white mt-4 border-2 border-gray-300 rounded-xl mx-2 px-3 py-2 lg:mx-0
-                lg:mt-2 lg:mb-2 lg:min-w-[300px]">
+                lg:mt-2 lg:mb-2 lg:min-w-[400px]">
                     <div class="flex justify-between items-center gap-2 mb-3">
                         <div class="flex items-center gap-1">
                             <span><i class="fa-regular fa-clock"></i></span>
@@ -80,16 +80,16 @@
                  <!-- menu grid -->
                 <div class="lg:grid lg:grid-cols-3 gap-3">
                      <!-- national emergency -->
-                    <div class="m-2">
+                    <div id="service-1" class="m-2">
                         <div class="bg-white p-4 rounded-2xl shadow-sm shadow-black flex-col">
                             <div class="flex justify-between items-center">
                                 <img src="assets/emergency.png" alt="" class="bg-red-300 p-2 w-16 rounded-xl">
-                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span id="heart_btn_1"><i class="fa-regular fa-heart"></i></span>
                             </div>
                             <div>
-                                <p class="text-[24px] font-bold">National Emergency Number</p>
+                                <p id="service_name_1" class="text-[24px] font-bold">National Emergency Number</p>
                                 <p class="text-[18px] font-medium text-slate-400">National Emergency</p>
-                                <p class="text-[32px] font-bold">999</p>
+                                <p id="service_number_1" class="text-[32px] font-bold">999</p>
                                 <button class="text-base font-medium bg-slate-300 px-4 rounded-lg">All</button>
                             </div>
                             <div class="mt-2 flex gap-2">
@@ -103,12 +103,12 @@
                         <div class="bg-white p-4 rounded-2xl shadow-sm shadow-black flex-col">
                             <div class="flex justify-between items-center">
                                 <img src="assets/police.png" alt="" class="bg-blue-300 p-2 w-16 rounded-xl">
-                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span id="heart_btn_2"><i class="fa-regular fa-heart"></i></span>
                             </div>
                             <div>
-                                <p class="text-[24px] font-bold">Police Helpline Number</p>
+                                <p id="service_name_2" class="text-[24px] font-bold">Police Helpline Number</p>
                                 <p class="text-[18px] font-medium text-slate-400">Police</p>
-                                <p class="text-[32px] font-bold">999</p>
+                                <p id="service_number_2" class="text-[32px] font-bold">999</p>
                                 <button class="text-base font-medium bg-slate-300 px-4 rounded-lg">police</button>
                             </div>
                             <div class="mt-2 flex gap-2">
@@ -122,12 +122,12 @@
                         <div class="bg-white p-4 rounded-2xl shadow-sm shadow-black flex-col">
                             <div class="flex justify-between items-center">
                                 <img src="assets/fire-service.png" alt="" class="bg-red-300 p-2 w-16 rounded-xl">
-                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span id="heart_btn_3"><i class="fa-regular fa-heart"></i></span>
                             </div>
                             <div>
-                                <p class="text-[24px] font-bold">Fire Service Number</p>
+                                <p id="service_name_3" class="text-[24px] font-bold">Fire Service Number</p>
                                 <p class="text-[18px] font-medium text-slate-400">Fire Service</p>
-                                <p class="text-[32px] font-bold">999</p>
+                                <p id="service_number_3" class="text-[32px] font-bold">999</p>
                                 <button class="text-base font-medium bg-slate-300 px-4 rounded-lg">Fire</button>
                             </div>
                             <div class="mt-2 flex gap-2">
@@ -141,12 +141,12 @@
                         <div class="bg-white p-4 rounded-2xl shadow-sm shadow-black flex-col">
                             <div class="flex justify-between items-center">
                                 <img src="assets/ambulance.png" alt="" class="bg-red-300 p-2 w-16 rounded-xl">
-                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span id="heart_btn_4"><i class="fa-regular fa-heart"></i></span>
                             </div>
                             <div>
-                                <p class="text-[24px] font-bold">Ambulance Service</p>
+                                <p id="service_name_4" class="text-[24px] font-bold">Ambulance Service</p>
                                 <p class="text-[18px] font-medium text-slate-400">Ambulance</p>
-                                <p class="text-[32px] font-bold">1994-999999</p>
+                                <p id="service_number_4" class="text-[32px] font-bold">1994-999999</p>
                                 <button class="text-base font-medium bg-slate-300 px-4 rounded-lg">Health</button>
                             </div>
                             <div class="mt-2 flex gap-2">
@@ -160,12 +160,12 @@
                         <div class="bg-white p-4 rounded-2xl shadow-sm shadow-black flex-col">
                             <div class="flex justify-between items-center">
                                 <img src="assets/emergency.png" alt="" class="bg-red-300 p-2 w-16 rounded-xl">
-                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span id="heart_btn_5"><i class="fa-regular fa-heart"></i></span>
                             </div>
                             <div>
-                                <p class="text-[24px] font-bold">Women & Children Helpline</p>
+                                <p id="service_name_5" class="text-[24px] font-bold">Women & Children Helpline</p>
                                 <p class="text-[18px] font-medium text-slate-400">Women & Children Helpline</p>
-                                <p class="text-[32px] font-bold">109</p>
+                                <p id="service_number_5" class="text-[32px] font-bold">109</p>
                                 <button class="text-base font-medium bg-slate-300 px-4 rounded-lg">Help</button>
                             </div>
                             <div class="mt-2 flex gap-2">
@@ -179,12 +179,12 @@
                         <div class="bg-white p-3 rounded-2xl shadow-sm shadow-black flex-col">
                             <div class="flex justify-between items-center">
                                 <img src="assets/emergency.png" alt="" class="bg-red-300 p-2 w-16 rounded-xl">
-                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span id="heart_btn_6"><i class="fa-regular fa-heart"></i></span>
                             </div>
                             <div>
-                                <p class="text-[24px] font-bold">Anti-Corruption Helpline</p>
+                                <p id="service_name_6" class="text-[24px] font-bold">Anti-Corruption Helpline</p>
                                 <p class="text-[18px] font-medium text-slate-400">Anti-Corruption</p>
-                                <p class="text-[32px] font-bold">106</p>
+                                <p id="service_number_6" class="text-[32px] font-bold">106</p>
                                 <button class="text-base font-medium bg-slate-300 px-4 rounded-lg">Govt.</button>
                             </div>
                             <div class="mt-2 flex gap-2">
@@ -198,12 +198,12 @@
                         <div class="bg-white p-5 rounded-2xl shadow-sm shadow-black flex-col">
                             <div class="flex justify-between items-center">
                                 <img src="assets/emergency.png" alt="" class="bg-red-300 p-2 w-16 rounded-xl">
-                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span id="heart_btn_7"><i class="fa-regular fa-heart"></i></span>
                             </div>
                             <div>
-                                <p class="text-[24px] font-bold">Electricity Helpline</p>
+                                <p id="service_name_7" class="text-[24px] font-bold">Electricity Helpline</p>
                                 <p class="text-[18px] font-medium text-slate-400">Electricity Outage</p>
-                                <p class="text-[32px] font-bold">16216</p>
+                                <p id="service_number_7" class="text-[32px] font-bold">16216</p>
                                 <button class="text-base font-medium bg-slate-300 px-4 rounded-lg">Electricity</button>
                             </div>
                             <div class="mt-2 flex gap-2">
@@ -217,12 +217,12 @@
                         <div class="bg-white p-4 rounded-2xl shadow-sm shadow-black flex-col">
                             <div class="flex justify-between items-center">
                                 <img src="assets/brac.png" alt="" class="bg-red-300 p-2 w-16 rounded-xl">
-                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span id="heart_btn_8"><i class="fa-regular fa-heart"></i></span>
                             </div>
                             <div>
-                                <p class="text-[24px] font-bold">Brac Helpline</p>
+                                <p id="service_name_8" class="text-[24px] font-bold">Brac Helpline</p>
                                 <p class="text-[18px] font-medium text-slate-400">Brac</p>
-                                <p class="text-[32px] font-bold">16445</p>
+                                <p id="service_number_8" class="text-[32px] font-bold">16445</p>
                                 <button class="text-base font-medium bg-slate-300 px-4 rounded-lg">NGO</button>
                             </div>
                             <div class="mt-2 flex gap-2">
@@ -236,12 +236,12 @@
                         <div class="bg-white p-4 rounded-2xl shadow-sm shadow-black flex-col">
                             <div class="flex justify-between items-center">
                                 <img src="assets/Bangladesh-Railway.png" alt="" class="bg-red-300 p-2 w-16 rounded-xl">
-                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span id="heart_btn_9"><i class="fa-regular fa-heart"></i></span>
                             </div>
                             <div>
-                                <p class="text-[24px] font-bold">National Emergency Number</p>
-                                <p class="text-[18px] font-medium text-slate-400">National Emergency</p>
-                                <p class="text-[32px] font-bold">999</p>
+                                <p id="service_name_9" class="text-[24px] font-bold">Bangladesh Railway Helpline </p>
+                                <p class="text-[18px] font-medium text-slate-400">Bangladesh Railway</p>
+                                <p id="service_number_9" class="text-[32px] font-bold">999</p>
                                 <button class="text-base font-medium bg-slate-300 px-4 rounded-lg">All</button>
                             </div>
                             <div class="mt-2 flex gap-2">
