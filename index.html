@@ -30,12 +30,12 @@
             </div>
             <div class="">
                 <div class="bg-[#41FF6B30] flex items-center gap-2 py-2 px-6 rounded-3xl">
-                    <p class="font-black text-base">100</p>
+                    <p id="coin_count" class="font-black text-base">100</p>
                     <img src="assets/coin.png" alt="" class="w-7">
                 </div>
             </div>
             <div class="bg-[#00A63E] flex items-center gap-2 py-2 px-6 rounded-3xl">
-                <p class="font-black text-white text-base ">0</p>
+                <p id="copy_count" class="font-black text-white text-base ">0</p>
                 <p class="font-medium text-white text-base">Copy</p>
             </div>
         </div>
@@ -93,8 +93,8 @@
                                 <button class="text-base font-medium bg-slate-300 px-4 rounded-lg">All</button>
                             </div>
                             <div class="mt-2 flex gap-2">
-                                <button class="text-[20px] bg-white border-2 border-gray-400 rounded-lg px-3 py-1 w-full"><span><i class="fa-regular fa-clipboard" style="color: #ababab;"></i></span>copy</button>
-                                <button class="text-[20px] bg-green-600 border-2 border-green-600 rounded-lg px-3 py-1 w-full"><span><i class="fa-solid fa-phone" style="color: #d6d6d6"></i></span> Call</button>
+                                <button id="copy_btn_1" class="text-[20px] bg-white border-2 border-gray-400 rounded-lg px-3 py-1 w-full"><span><i class="fa-regular fa-clipboard" style="color: #ababab;"></i></span>copy</button>
+                                <button id="call_btn_1" class="text-[20px] bg-green-600 border-2 border-green-600 rounded-lg px-3 py-1 w-full"><span><i class="fa-solid fa-phone" style="color: #d6d6d6"></i></span> Call</button>
                             </div>
                         </div>
                     </div>
@@ -112,8 +112,8 @@
                                 <button class="text-base font-medium bg-slate-300 px-4 rounded-lg">police</button>
                             </div>
                             <div class="mt-2 flex gap-2">
-                                <button class="text-[20px] bg-white border-2 border-gray-400 rounded-lg px-3 py-1 w-full"><span><i class="fa-regular fa-clipboard" style="color: #ababab;"></i></span>copy</button>
-                                <button class="text-[20px] bg-green-600 border-2 border-green-600 rounded-lg px-3 py-1 w-full"><span><i class="fa-solid fa-phone" style="color: #d6d6d6"></i></span> Call</button>
+                                <button id="copy_btn_2" class="text-[20px] bg-white border-2 border-gray-400 rounded-lg px-3 py-1 w-full"><span><i class="fa-regular fa-clipboard" style="color: #ababab;"></i></span>copy</button>
+                                <button id="call_btn_2" class="text-[20px] bg-green-600 border-2 border-green-600 rounded-lg px-3 py-1 w-full"><span><i class="fa-solid fa-phone" style="color: #d6d6d6"></i></span> Call</button>
                             </div>
                         </div>
                     </div>
@@ -131,8 +131,8 @@
                                 <button class="text-base font-medium bg-slate-300 px-4 rounded-lg">Fire</button>
                             </div>
                             <div class="mt-2 flex gap-2">
-                                <button class="text-[20px] bg-white border-2 border-gray-400 rounded-lg px-3 py-1 w-full"><span><i class="fa-regular fa-clipboard" style="color: #ababab;"></i></span>copy</button>
-                                <button class="text-[20px] bg-green-600 border-2 border-green-600 rounded-lg px-3 py-1 w-full"><span><i class="fa-solid fa-phone" style="color: #d6d6d6"></i></span> Call</button>
+                                <button id="copy_btn_3" class="text-[20px] bg-white border-2 border-gray-400 rounded-lg px-3 py-1 w-full"><span><i class="fa-regular fa-clipboard" style="color: #ababab;"></i></span>copy</button>
+                                <button id="call_btn_3" class="text-[20px] bg-green-600 border-2 border-green-600 rounded-lg px-3 py-1 w-full"><span><i class="fa-solid fa-phone" style="color: #d6d6d6"></i></span> Call</button>
                             </div>
                         </div>
                     </div>
@@ -150,8 +150,8 @@
                                 <button class="text-base font-medium bg-slate-300 px-4 rounded-lg">Health</button>
                             </div>
                             <div class="mt-2 flex gap-2">
-                                <button class="text-[20px] bg-white border-2 border-gray-400 rounded-lg px-3 py-1 w-full"><span><i class="fa-regular fa-clipboard" style="color: #ababab;"></i></span>copy</button>
-                                <button class="text-[20px] bg-green-600 border-2 border-green-600 rounded-lg px-3 py-1 w-full"><span><i class="fa-solid fa-phone" style="color: #d6d6d6"></i></span> Call</button>
+                                <button id="copy_btn_4" class="text-[20px] bg-white border-2 border-gray-400 rounded-lg px-3 py-1 w-full"><span><i class="fa-regular fa-clipboard" style="color: #ababab;"></i></span>copy</button>
+                                <button id="call_btn_4" class="text-[20px] bg-green-600 border-2 border-green-600 rounded-lg px-3 py-1 w-full"><span><i class="fa-solid fa-phone" style="color: #d6d6d6"></i></span> Call</button>
                             </div>
                         </div>
                     </div>
@@ -169,14 +169,14 @@
                                 <button class="text-base font-medium bg-slate-300 px-4 rounded-lg">Help</button>
                             </div>
                             <div class="mt-2 flex gap-2">
-                                <button class="text-[20px] bg-white border-2 border-gray-400 rounded-lg px-3 py-1 w-full"><span><i class="fa-regular fa-clipboard" style="color: #ababab;"></i></span>copy</button>
-                                <button class="text-[20px] bg-green-600 border-2 border-green-600 rounded-lg px-3 py-1 w-full"><span><i class="fa-solid fa-phone" style="color: #d6d6d6"></i></span> Call</button>
+                                <button id="copy_btn_5" class="text-[20px] bg-white border-2 border-gray-400 rounded-lg px-3 py-1 w-full"><span><i class="fa-regular fa-clipboard" style="color: #ababab;"></i></span>copy</button>
+                                <button id="call_btn_5" class="text-[20px] bg-green-600 border-2 border-green-600 rounded-lg px-3 py-1 w-full"><span><i class="fa-solid fa-phone" style="color: #d6d6d6"></i></span> Call</button>
                             </div>
                         </div>
                     </div>
                     <!-- Anti-Corruption -->
                     <div class="m-2">
-                        <div class="bg-white p-4 rounded-2xl shadow-sm shadow-black flex-col">
+                        <div class="bg-white p-3 rounded-2xl shadow-sm shadow-black flex-col">
                             <div class="flex justify-between items-center">
                                 <img src="assets/emergency.png" alt="" class="bg-red-300 p-2 w-16 rounded-xl">
                                 <span><i class="fa-regular fa-heart"></i></span>
@@ -188,14 +188,14 @@
                                 <button class="text-base font-medium bg-slate-300 px-4 rounded-lg">Govt.</button>
                             </div>
                             <div class="mt-2 flex gap-2">
-                                <button class="text-[20px] bg-white border-2 border-gray-400 rounded-lg px-3 py-1 w-full"><span><i class="fa-regular fa-clipboard" style="color: #ababab;"></i></span>copy</button>
-                                <button class="text-[20px] bg-green-600 border-2 border-green-600 rounded-lg px-3 py-1 w-full"><span><i class="fa-solid fa-phone" style="color: #d6d6d6"></i></span> Call</button>
+                                <button id="copy_btn_6" class="text-[20px] bg-white border-2 border-gray-400 rounded-lg px-3 py-1 w-full"><span><i class="fa-regular fa-clipboard" style="color: #ababab;"></i></span>copy</button>
+                                <button id="call_btn_6" class="text-[20px] bg-green-600 border-2 border-green-600 rounded-lg px-3 py-1 w-full"><span><i class="fa-solid fa-phone" style="color: #d6d6d6"></i></span> Call</button>
                             </div>
                         </div>
                     </div>
                     <!-- electricity -->
                     <div class="m-2">
-                        <div class="bg-white p-4 rounded-2xl shadow-sm shadow-black flex-col">
+                        <div class="bg-white p-5 rounded-2xl shadow-sm shadow-black flex-col">
                             <div class="flex justify-between items-center">
                                 <img src="assets/emergency.png" alt="" class="bg-red-300 p-2 w-16 rounded-xl">
                                 <span><i class="fa-regular fa-heart"></i></span>
@@ -207,8 +207,8 @@
                                 <button class="text-base font-medium bg-slate-300 px-4 rounded-lg">Electricity</button>
                             </div>
                             <div class="mt-2 flex gap-2">
-                                <button class="text-[20px] bg-white border-2 border-gray-400 rounded-lg px-3 py-1 w-full"><span><i class="fa-regular fa-clipboard" style="color: #ababab;"></i></span>copy</button>
-                                <button class="text-[20px] bg-green-600 border-2 border-green-600 rounded-lg px-3 py-1 w-full"><span><i class="fa-solid fa-phone" style="color: #d6d6d6"></i></span> Call</button>
+                                <button id="copy_btn_7" class="text-[20px] bg-white border-2 border-gray-400 rounded-lg px-3 py-1 w-full"><span><i class="fa-regular fa-clipboard" style="color: #ababab;"></i></span>copy</button>
+                                <button id="call_btn_7" class="text-[20px] bg-green-600 border-2 border-green-600 rounded-lg px-3 py-1 w-full"><span><i class="fa-solid fa-phone" style="color: #d6d6d6"></i></span> Call</button>
                             </div>
                         </div>
                     </div>
@@ -226,8 +226,8 @@
                                 <button class="text-base font-medium bg-slate-300 px-4 rounded-lg">NGO</button>
                             </div>
                             <div class="mt-2 flex gap-2">
-                                <button class="text-[20px] bg-white border-2 border-gray-400 rounded-lg px-3 py-1 w-full"><span><i class="fa-regular fa-clipboard" style="color: #ababab;"></i></span>copy</button>
-                                <button class="text-[20px] bg-green-600 border-2 border-green-600 rounded-lg px-3 py-1 w-full"><span><i class="fa-solid fa-phone" style="color: #d6d6d6"></i></span> Call</button>
+                                <button id="copy_btn_8" class="text-[20px] bg-white border-2 border-gray-400 rounded-lg px-3 py-1 w-full"><span><i class="fa-regular fa-clipboard" style="color: #ababab;"></i></span>copy</button>
+                                <button id="call_btn_8" class="text-[20px] bg-green-600 border-2 border-green-600 rounded-lg px-3 py-1 w-full"><span><i class="fa-solid fa-phone" style="color: #d6d6d6"></i></span> Call</button>
                             </div>
                         </div>
                     </div>
@@ -245,14 +245,16 @@
                                 <button class="text-base font-medium bg-slate-300 px-4 rounded-lg">All</button>
                             </div>
                             <div class="mt-2 flex gap-2">
-                                <button class="text-[20px] bg-white border-2 border-gray-400 rounded-lg px-3 py-1 w-full"><span><i class="fa-regular fa-clipboard" style="color: #ababab;"></i></span>copy</button>
-                                <button class="text-[20px] bg-green-600 border-2 border-green-600 rounded-lg px-3 py-1 w-full"><span><i class="fa-solid fa-phone" style="color: #d6d6d6"></i></span> Call</button>
+                                <button id="copy_btn_9" class="text-[20px] bg-white border-2 border-gray-400 rounded-lg px-3 py-1 w-full"><span><i class="fa-regular fa-clipboard" style="color: #ababab;"></i></span>copy</button>
+                                <button id="call_btn_9" class="text-[20px] bg-green-600 border-2 border-green-600 rounded-lg px-3 py-1 w-full"><span><i class="fa-solid fa-phone" style="color: #d6d6d6"></i></span> Call</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
      </main>
+     <!-- javascript -->
+      <script src="js/script.js"></script>
 </body>
 
 </html>
