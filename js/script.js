@@ -102,6 +102,14 @@ document.getElementById('call_btn_1')
         const serviceName = document.getElementById('service_name_1').innerText
         const serviceNum = document.getElementById('service_number_1').innerText
         alert('Request for '+serviceName+' has been initiated. Calling '+serviceNum+'. 20 coins will be deducted as service charge')
+        const data = {
+            name:serviceName,
+            number:serviceNum,
+            date: new Date().toLocaleTimeString()
+        }
+        callData.push(data)
+        logHistory()
+        
     })
 document.getElementById('call_btn_2')
     .addEventListener('click',function(){
@@ -115,6 +123,13 @@ document.getElementById('call_btn_2')
         const serviceName = document.getElementById('service_name_2').innerText
         const serviceNum = document.getElementById('service_number_2').innerText
         alert('Request for '+serviceName+' has been initiated. Calling '+serviceNum+'. 20 coins will be deducted as service charge')
+        const data = {
+            name:serviceName,
+            number:serviceNum,
+            date: new Date().toLocaleTimeString()
+        }
+        callData.push(data)
+        logHistory()
     })
 document.getElementById('call_btn_3')
     .addEventListener('click',function(){
@@ -128,6 +143,13 @@ document.getElementById('call_btn_3')
         const serviceName = document.getElementById('service_name_3').innerText
         const serviceNum = document.getElementById('service_number_3').innerText
         alert('Request for '+serviceName+' has been initiated. Calling '+serviceNum+'. 20 coins will be deducted as service charge')
+        const data = {
+            name:serviceName,
+            number:serviceNum,
+            date: new Date().toLocaleTimeString()
+        }
+        callData.push(data)
+        logHistory()
     })
 document.getElementById('call_btn_4')
     .addEventListener('click',function(){
@@ -141,6 +163,13 @@ document.getElementById('call_btn_4')
         const serviceName = document.getElementById('service_name_4').innerText
         const serviceNum = document.getElementById('service_number_4').innerText
         alert('Request for '+serviceName+' has been initiated. Calling '+serviceNum+'. 20 coins will be deducted as service charge')
+        const data = {
+            name:serviceName,
+            number:serviceNum,
+            date: new Date().toLocaleTimeString()
+        }
+        callData.push(data)
+        logHistory()
     })
 document.getElementById('call_btn_5')
     .addEventListener('click',function(){
@@ -154,6 +183,13 @@ document.getElementById('call_btn_5')
         const serviceName = document.getElementById('service_name_5').innerText
         const serviceNum = document.getElementById('service_number_5').innerText
         alert('Request for '+serviceName+' has been initiated. Calling '+serviceNum+'. 20 coins will be deducted as service charge')
+        const data = {
+            name:serviceName,
+            number:serviceNum,
+            date: new Date().toLocaleTimeString()
+        }
+        callData.push(data)
+        logHistory()
     })
 document.getElementById('call_btn_6')
     .addEventListener('click',function(){
@@ -167,6 +203,13 @@ document.getElementById('call_btn_6')
         const serviceName = document.getElementById('service_name_6').innerText
         const serviceNum = document.getElementById('service_number_6').innerText
         alert('Request for '+serviceName+' has been initiated. Calling '+serviceNum+'. 20 coins will be deducted as service charge')
+        const data = {
+            name:serviceName,
+            number:serviceNum,
+            date: new Date().toLocaleTimeString()
+        }
+        callData.push(data)
+        logHistory()
     })
 document.getElementById('call_btn_7')
     .addEventListener('click',function(){
@@ -180,6 +223,13 @@ document.getElementById('call_btn_7')
         const serviceName = document.getElementById('service_name_7').innerText
         const serviceNum = document.getElementById('service_number_7').innerText
         alert('Request for '+serviceName+' has been initiated. Calling '+serviceNum+'. 20 coins will be deducted as service charge')
+        const data = {
+            name:serviceName,
+            number:serviceNum,
+            date: new Date().toLocaleTimeString()
+        }
+        callData.push(data)
+        logHistory()
     })
 document.getElementById('call_btn_8')
     .addEventListener('click',function(){
@@ -193,6 +243,13 @@ document.getElementById('call_btn_8')
         const serviceName = document.getElementById('service_name_8').innerText
         const serviceNum = document.getElementById('service_number_8').innerText
         alert('Request for '+serviceName+' has been initiated. Calling '+serviceNum+'. 20 coins will be deducted as service charge')
+        const data = {
+            name:serviceName,
+            number:serviceNum,
+            date: new Date().toLocaleTimeString()
+        }
+        callData.push(data)
+        logHistory()
     })
 document.getElementById('call_btn_9')
     .addEventListener('click',function(){
@@ -206,6 +263,34 @@ document.getElementById('call_btn_9')
         const serviceName = document.getElementById('service_name_9').innerText
         const serviceNum = document.getElementById('service_number_9').innerText
         alert('Request for '+serviceName+' has been initiated. Calling '+serviceNum+'. 20 coins will be deducted as service charge')
+        const data = {
+            name:serviceName,
+            number:serviceNum,
+            date: new Date().toLocaleTimeString()
+        }
+        callData.push(data)
+        logHistory()
     })
 
+    // call history history function
+    const callData = []
 
+    function logHistory(){
+        const container = document.getElementById('history_container')
+        container.innerHTML=''
+        for(const data of callData){
+            const template = document.createElement('div')
+            template.innerHTML=`
+            <div class="flex justify-between bg-slate-200 p-5 rounded-lg mt-2">
+                            <div>
+                                <p class="text-base font-bold">${data.name}</p>
+                                <p class="">${data.number}</p>
+                            </div>
+                            <div>
+                                <p class="">${data.date}</p>
+                            </div>
+                        </div>
+            `
+            container.appendChild(template)
+        }
+    }
